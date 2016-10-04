@@ -8,7 +8,8 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/delba/Permission.git", :tag => "v1.5" }
 
   s.ios.deployment_target = "8.0"
-  s.frameworks          = 'Foundation', 'Speech'
+  s.weak_framework = 'Speech'
+  
 
   s.source_files = "Source/**/*.{swift, h}"
 
